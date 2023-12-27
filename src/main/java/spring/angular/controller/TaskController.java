@@ -9,7 +9,7 @@ import java.util.List;
 
 @Data
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://angular-ui-two.vercel.app/")
 public class TaskController {
 
     // standard constructors

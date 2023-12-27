@@ -21,7 +21,7 @@ public class SpringAngularApplication {
     CommandLineRunner init(TaskRepository taskRepository) {
         return args -> {
             Stream.of("John", "Julie", "Jennifer", "Helen", "Rachel").forEach(name -> {
-                Task task = new Task(name, name.toLowerCase() + "@domain.com");
+                Task task = new Task(name, name.toLowerCase() + "@test.mail");
                 taskRepository.save(task);
             });
             taskRepository.findAll().forEach(System.out::println);
